@@ -47,20 +47,20 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 * Step 10: Re-enter your password to confirm it
 * Step 11: You are now at Ubuntu command line!
 * Step 12: Update your "Linux App Store" by typing `sudo apt update && sudo apt upgrade -y` and hit enter (You can copy this with Ctrl+C in Github but NOT Ctrl+V in Ubuntu! You can paste it by making the Ubuntu window active and "right clicking the mouse" to paste.  Yes it's not convenient.)
-** <small>Technically you can change from right click to paste to "Ctrl+Shift+V" to paste, but you need to right click the Ubuntu title bar, hit Properties, and checkmark "Use Ctrl+Shift+C/V as Copy/Paste")</small>
--# Learnin' Trivia: "Sudo" means "HEY! DO THIS OR ELSE!", "APT" means "Advanced Package Tool" (Kinda like Linux's app store!), and "-y" means "Yes"... So we're kind of saying "HEY! OPEN APT APP STORE, UPDATE IT & UPGRADE IT! Yes, do it!"
+    * <small>Technically you can change from right click to paste to "Ctrl+Shift+V" to paste, but you need to right click the Ubuntu title bar, hit Properties, and checkmark "Use Ctrl+Shift+C/V as Copy/Paste")</small>
+    * Learnin' Trivia: "Sudo" means "HEY! DO THIS OR ELSE!", "APT" means "Advanced Package Tool" (Kinda like Linux's app store!), and "-y" means "Yes"... So we're kind of saying "HEY! OPEN APT APP STORE, UPDATE IT & UPGRADE IT! Yes, do it!"
 * Step 13: Next, we're going to install a dependency called "YAD" (Yet Another Dialogue). A dependency is kind of like "An app that requires another app to run". It's dependent upon it! Type `sudo apt-get install yad`
--# Learnin' Trivia: Some of these should sound familiar! "HEY! OPEN THE APP STORE, GET YAD, AND INSTALL IT!" (See you're becoming a Linux pro!)
+    * Learnin' Trivia: Some of these should sound familiar! "HEY! OPEN THE APP STORE, GET YAD, AND INSTALL IT!" (See you're becoming a Linux pro!)
 * Step 14: Download btf.sh from this Github
 * Step 15: Place it somewhere easy to access. For example, you may consider saving it to C:/mondo/btf.sh
--# Learnin' Trivia: Linux doesnt REALLY have a GUI File Manager like Windows does, so we have to type our way to naviage to C:/mondo/btf.sh. 
--# More Learnin' Trivia: Linux doesn't start us off in C:\, but it starts us off in the "home" directory. It's not displayed as "home", but is displayed as a Tilde "`~`", and has your user status after "$". So it will say something like "MYUSERNAME@DESKTOP-MYDESKTOP:~$". This is kind of like "Before C:/" So imagine if your File Explorer said "Mondo@MondosPC:~$/C:/mondo/" instead of just "C:/mondo". Kind of hard to wrap your head around, but you'll get it!
--# EVEN MOAR Learnin' Trivia: The "$" at the end means you are a regular user. The command 'sudo -i' is how you would change the "$" to a "#" and give yourself a kind of "admin" status. We don't need that here, but just an FYI!
+    * Learnin' Trivia: Linux doesnt REALLY have a GUI File Manager like Windows does, so we have to type our way to naviage to C:/mondo/btf.sh. 
+    * More Learnin' Trivia: Linux doesn't start us off in C:\, but it starts us off in the "home" directory. It's not displayed as "home", but is displayed as a Tilde "`~`", and has your user status after "$". So it will say something like "MYUSERNAME@DESKTOP-MYDESKTOP:~$". This is kind of like "Before C:/" So imagine if your File Explorer said "Mondo@MondosPC:~$/C:/mondo/" instead of just "C:/mondo". Kind of hard to wrap your head around, but you'll get it!
+    * EVEN MOAR Learnin' Trivia: The "$" at the end means you are a regular user. The command 'sudo -i' is how you would change the "$" to a "#" and give yourself a kind of "admin" status. We don't need that here, but just an FYI!
 * Step 16: Switch back to Ubuntu. We're going to "Change Directories" and "Mount" the drive we saved btf.sh in. (Remember mounting .isos? it's kinda like that!)
 * Step 17: Type `cd /mnt/c/mondo` and hit enter. (See it's kinda like saying "From Root, Change Directory, & Mount C:/mondo")
--# Learnin' Trivia: You can type the command for directory, `dir` (enter) or list, `ls` (enter) to see all of the files in this directory! You can check if you're in the right directory by doing this.
--# More Learnin' Trivia; you can type `cd ../` (enter) to go back one folder. (For example, from C:/mondo to C:/) or `cd` to go to your home folder.
+    * Learnin' Trivia: You can type the command for directory, `dir` (enter) or list, `ls` (enter) to see all of the files in this directory! You can check if you're in the right directory by doing this.
+    * More Learnin' Trivia; you can type `cd ../` (enter) to go back one folder. (For example, from C:/mondo to C:/) or `cd` to go to your home folder.
 * Step 18: Next we need to give btf.sh permission to run! Type `chmod +x btf.sh` and hit enter
 * Step 19: Now it's time to run the script! Type `./btf.sh` and hit enter
--# With the default settings, after an hour of running Factorio, it will prompt you to take a break! You can hit "No" to make me sad, you can hit "Snooze" to get a 30 second snooze, and you can hit "I'm Stepping Away" to get up, stretch, take a break and restart the timer!
+    * With the default settings, after an hour of running Factorio, it will prompt you to take a break! You can hit "No" to make me sad, you can hit "Snooze" to get a 30 second snooze, and you can hit "I'm Stepping Away" to get up, stretch, take a break and restart the timer!
 
