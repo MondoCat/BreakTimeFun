@@ -8,16 +8,18 @@ BTF is a WSL app for enforcing breaks for a particular app. (A forced break afte
 This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
 
 # WTF is WSL? What's this ".sh" bullshit? Where is my .exe!?
-It's okay if you dont understand WSL or Linux. I didn't either, and there's not really any good guides on how to run it without being a Linux pr0, so I will include one here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
+It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either, and there's not really any good guides on how to run it without being a Linux pr0, so I will include one here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
 
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
 
 # --- CONFIGURATION ---
 You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
-* Step 1: Type `sudo apt install dos2unix` (enter)
-* Step 2: Naviagate to the file (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
+* Step 1: Type `sudo apt install dos2unix` (enter) in Ubuntu (Linux) to install the converter.
+* Step 2: Make changes to your config file in notepad. Save it in windows.
+* Step 3: Naviagate to the file in Ubuntu (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
 * Step 3: Run it with `./btf.sh`
+    * Every time you change something in the config you have to save the .sh in notepad and re-run  `dos2unix btf.sh` before running `./btf.sh`
 
 
 ```
