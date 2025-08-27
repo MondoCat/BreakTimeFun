@@ -1,5 +1,5 @@
 # Break Time Fun (BTF)
-BTF is a WSL app for enforcing breaks for a particular app. (Factorio is the default app. If you've played Factorio, you know why, heh.)
+BTF is a WSL app for enforcing breaks for a particular app. (A forced break after 1 hour of Factorio is the default setting here. If you've played Factorio, you know why, heh.) This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
 
 # WTF is WSL? What's this ".sh" bullshit? Where is my .exe!?
 It's okay if you dont understand WSL or Linux. I didn't either, and there's not really any good guides on how to run it without being a Linux pr0, so I will include one here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
