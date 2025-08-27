@@ -1,4 +1,4 @@
-# Break Time Fun (BTF)
+# Break Time Fun (BTF) for WSL on Windows!
 Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an app and forget to do chores, make supper, eat, water the cats, feed the plants, or even neglect to pee... and start saying "BTF! <3" 
 
 
