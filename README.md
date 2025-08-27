@@ -64,3 +64,5 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 * Step 19: Now it's time to run the script! Type `./btf.sh` and hit enter
     * With the default settings, after an hour of running Factorio, it will prompt you to take a break! You can hit "No" to make me sad, you can hit "Snooze" to get a 30 second snooze, and you can hit "I'm Stepping Away" to get up, stretch, take a break and restart the timer!
 
+# Disclaimer
+I used Gemini to help write & troubleshoot this app. Yes, I am a disgrace to my family for not learning all of this by heart. No, I don't care. &hearts;
