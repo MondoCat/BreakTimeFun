@@ -143,3 +143,6 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 
 # Disclaimer
 I used Gemini to help write & troubleshoot this app. Yes, I am a disgrace to my family for not learning all of this by heart. No, I don't care. &hearts;
+
+# License
+Don't sell it. Link to me. Share it with your friends, neighbors, coworkers, and greatest nemesises. Throw money at me if you want for the time I used to poke at this, but you don't need to.
