@@ -1,24 +1,56 @@
-# Break Time Fun (BTF) for WSL on Windows!
+# Break Time Fun (BTF)
 Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an app and forget to do chores, make supper, eat, water the cats, feed the plants, or even neglect to pee... and start saying "BTF! <3" 
-
-
-BTF is a completely customizable WSL app for enforcing breaks for a particular app. 
-
 
 By default, there is a forced break after each interval of ***1 hour played of the critically acclaimed Steam game that has never gone on sale, so just buy it at full price, [Factorio](https://store.steampowered.com/app/427520/Factorio/) .*** (If you've played Factorio, you know why, heh.) 
 
-
 This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
 
-# WTF is WSL? What's this ".sh" bullshit? Where is my .exe!?
-It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either this time last year, and there's not really any good guides on how to get started with it as a newbie without being a Linux pr0, so I will include a "I know 0 Linux to novice" guide here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
+The WLS, PS1, and Linux script is fully customizable, allowing you to change the target application, time limits, and monitoring hours. The .exe (Windows) unfortunately is not.
 
+<HR>
+<HR>
+
+## Table of Contents
+* [Windows Instructions (.exe & .ps1)](#windows-instructions)
+* [Windows (WSL) Instructions (.sh)](#wsl-instructions)
+* [Linux Instructions](#linux-instructions)
+* [Ye Olde Configuration](#config)
+* [Disclaimer](#disclaimer)
+
+
+<HR>
+<HR>
+
+## Windows Instructions
+
+There are two versions for Windows: a simple `.exe` for default settings and a customizable `.ps1` (PowerShell) script.
+
+### Quick Start (.exe Windows version)
+This version is locked to the default settings (1-hour reminder between 5-11pm for `factorio.exe`)
+1.  Download `BTF.exe`.
+2.  Double-click it to run.
+
+### Customizable (.ps1 PowerShell Windows version)
+This version allows you to change the settings on Windows. Powershell is kind of like command prompt from old Windows, but for the modern age! If you've ever used "Dos Prompts" it's similar but more flexible!
+
+**To Run:**
+1.  Download `BTF.ps1`.
+2.  Right-click the file and select **Run with PowerShell**.
+
+**To Customize:**
+1.  Right-click `BTF.ps1` and select **Edit**.
+2.  Modify the variables in the **Configuration** section at the top of the file.
+3.  Save the file and run it.
+
+<HR>
+<HR>
+
+# WSL Instructions
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
-
-
-# Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbie instructions are down below configuration)
-
+* It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either this time last year, and there's not really any good guides on how to get started with it as a newbie without being a Linux pr0, so I will include a "I know 0 Linux to novice" guide here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
+  
+## Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbie instructions are below)
 * Install WSL in powershell with `wsl --install` and follow the prompts
 * Update APT with `sudo apt update && sudo apt upgrade -y`
 * Download and configure btf.sh to fit your needs (See below for configuration info)
@@ -27,28 +59,7 @@ It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either this time 
 * Set permissions with `chmod +x btf.sh`
 * Run it with `./btf.sh`
 
-  
-# Ye Olde Configuration File
-You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
-* Step 1: Type `sudo apt install dos2unix` (enter) in Ubuntu (Linux) to install the converter.
-* Step 2: Make changes to your config file in notepad. Save it in windows.
-* Step 3: Naviagate to the file in Ubuntu (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
-* Step 3: Run it with `./btf.sh`
-    * Every time you change something in the config you have to save the .sh in notepad and re-run  `dos2unix btf.sh` before running `./btf.sh`
-
-
-```
-APP_NAME="factorio.exe"      # Use the Windows process name of the app (default: factorio.exe)
-TIME_LIMIT_MINUTES=60        # Wait this long for the FIRST pop-up (default: 60 mins)
-POPUP_INTERVAL_MINUTES=1     # Default interval for recurring pop-ups (default: 1 minute)
-SNOOZE_SECONDS=30            # Snooze duration in seconds (default: 30 seconds)
-CHECK_INTERVAL_SECONDS=30    # How often the script checks if the app is running (default: 30 seconds)
-YAD_TIMEOUT=10               # How many seconds the pop-up stays on screen before timing out (default: 10 seconds)
-START_HOUR=17                # Start monitoring at 5 PM (default: 17 which is 5pm)
-STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11pm)
-```
-
-# Installing WSL, Downloading YAD, and Running btf.sh for Newbies
+## Installing WSL, Downloading YAD, and Running btf.sh for Newbies (Pr0 instructions are above)
 Let's assume you don't know what linux is. Never heard of WSL, and maybe you've seen the command prompt or PowerShell on Windows but haven't really touched it. Can you run this app? Yes! Let me hold your hand as we walk through the valley of death. You will fear no terminal, for you are with me! You'll be saying, "Mondo! Your keyboard and your mouse, they comfort me, and now, I vaguely understand how to use a command prompt in WSL/Linux! At least good enough to run btf.sh!"
 
 Just an FYI, I am using the terms WSL/Linux/Ubunto pretty interchangably in this guide. I might fix this later, but right now i am eepi v_v.
@@ -83,6 +94,52 @@ WSL = Windows Subsystem for Linux (Linux running in Windows!) Linux is the opera
 * Step 18: Next we need to give btf.sh permission to run! Type `chmod +x btf.sh` and hit enter
 * Step 19: Now it's time to run the script! Type `./btf.sh` and hit enter
     * With the default settings, after an hour of running Factorio, it will prompt you to take a break! You can hit "No" to make me sad, you can hit "Snooze" to get a 30 second snooze, and you can hit "I'm Stepping Away" to get up, stretch, take a break and restart the timer!
+<HR>
+<HR>
+
+# Linux Instructions
+* Customizable Break Time Fun (BTF) for Linux
+* BTF is a completely customizable linux app for enforcing breaks for a particular app.
+* If you're here, you probably know what Linux is
+
+**To Run:**
+1.  Download `BTF`.
+2.  Double-click it to run
+
+**To Customize:**
+1.  Right-click `BTF` and select **Edit**.
+2.  Modify the variables in the **Configuration** section at the top of the file.
+3.  Save the file and run it.
+
+<HR>
+<HR>
+
+## Config
+You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
+* Step 1: Type `sudo apt install dos2unix` (enter) in Ubuntu (Linux) to install the converter.
+* Step 2: Make changes to your config file in notepad. Save it in windows.
+* Step 3: Naviagate to the file in Ubuntu (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
+* Step 3: Run it with `./btf.sh`
+    * Every time you change something in the config you have to save the .sh in notepad and re-run  `dos2unix btf.sh` before running `./btf.sh`
+
+
+```
+APP_NAME="factorio.exe"      # Use the Windows process name of the app (default: factorio.exe)
+TIME_LIMIT_MINUTES=60        # Wait this long for the FIRST pop-up (default: 60 mins)
+POPUP_INTERVAL_MINUTES=1     # Default interval for recurring pop-ups (default: 1 minute)
+SNOOZE_SECONDS=30            # Snooze duration in seconds (default: 30 seconds)
+CHECK_INTERVAL_SECONDS=30    # How often the script checks if the app is running (default: 30 seconds)
+YAD_TIMEOUT=10               # How many seconds the pop-up stays on screen before timing out (default: 10 seconds)
+START_HOUR=17                # Start monitoring at 5 PM (default: 17 which is 5pm)
+STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11pm)
+```
+
+
+
+
+<HR>
+<HR>
+
 
 # Disclaimer
 I used Gemini to help write & troubleshoot this app. Yes, I am a disgrace to my family for not learning all of this by heart. No, I don't care. &hearts;
