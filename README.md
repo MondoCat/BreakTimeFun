@@ -1,5 +1,5 @@
 # Break Time Fun (BTF)
-Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an app and forget to do chores, make supper, eat, or pee... and start saying "BTF! <3" 
+Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an app and forget to do chores, make supper, eat, water the cats, feed the plants, or even neglect to pee... and start saying "BTF! <3" 
 
 
 BTF is a WSL app for enforcing breaks for a particular app. (A forced break after 1 hour of Factorio is the default setting here. If you've played Factorio, you know why, heh.) 
