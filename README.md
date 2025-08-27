@@ -57,7 +57,7 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
     * More Learnin' Trivia: Linux doesn't start us off in C:\, but it starts us off in the "home" directory. It's not displayed as "home", but is displayed as a Tilde "`~`", and has your user status after "$". So it will say something like "MYUSERNAME@DESKTOP-MYDESKTOP:`~`$". This is kind of like "Before C:/" So imagine if your File Explorer said "Mondo@MondosPC:`~`$/C:/mondo/" instead of just "C:/mondo". Kind of hard to wrap your head around, but you'll get it!
     * EVEN MOAR Learnin' Trivia: The "$" at the end means you are a regular user. The command 'sudo -i' is how you would change the "$" to a "#" and give yourself a kind of "admin" status. We don't need that here, but just an FYI!
 * Step 16: Switch back to Ubuntu. We're going to "Change Directories" and "Mount" the drive we saved btf.sh in. (Remember mounting .isos? it's kinda like that!)
-* Step 17: Type `cd /mnt/c/mondo` and hit enter. (See it's kinda like saying "From Root, Change Directory, & Mount C:/mondo")
+* Step 17: Type `cd /mnt/c/mondo` and hit enter. (See it's kinda like saying "From Home, Change Directory, & Mount C:/mondo")
     * Learnin' Trivia: You can type the command for directory, `dir` (enter) or list, `ls` (enter) to see all of the files in this directory! You can check if you're in the right directory by doing this.
     * More Learnin' Trivia; you can type `cd ../` (enter) to go back one folder. (For example, from C:/mondo to C:/) or `cd` to go to your home folder.
 * Step 18: Next we need to give btf.sh permission to run! Type `chmod +x btf.sh` and hit enter
