@@ -5,13 +5,13 @@ Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an a
 BTF is a completely customizable WSL app for enforcing breaks for a particular app. 
 
 
-By default, there is a forced break after each interval of 1 hour of Factorio. (If you've played Factorio, you know why, heh.) 
+By default, there is a forced break after each interval of ***1 hour played of the Steam game, [Factorio](https://store.steampowered.com/app/427520/Factorio/) .*** (If you've played Factorio, you know why, heh.) 
 
 
 This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
 
 # WTF is WSL? What's this ".sh" bullshit? Where is my .exe!?
-It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either, and there's not really any good guides on how to run it without being a Linux pr0, so I will include one here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
+It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either this time last year, and there's not really any good guides on how to get started with it as a newbie without being a Linux pr0, so I will include a "I know 0 Linux to novice" guide here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
 
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
@@ -49,6 +49,9 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 ```
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Newbies
+Let's assume you don't know what linux is. Never heard of WSL, and maybe you've seen the command prompt or PowerShell on Windows but haven't really touched it. Can you run this app? Yes! Let me hold your hand as we walk through the valley of death. You will fear no terminal, for you are with me! You'll be saying, "Mondo! Your keyboard and your mouse, they comfort me, and now, I vaguely understand how to use a command prompt in WSL/Linux! At least good enough to run btf.sh!"
+
+Just an FYI, using WSL/Linux/Ubunto pretty interchanably in this guide.
 
 * Step 1: Open the Start Menu
 * Step 2: Type "PowerShell" but do NOT hit enter
