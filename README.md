@@ -16,7 +16,7 @@ The WLS, PS1, and Linux script is fully customizable, allowing you to change the
 * [Linux Instructions](#linux-instructions)
 * [Ye Olde Configuration](#config)
 * [Disclaimer](#disclaimer)
-
+* [License](#license)
 
 <HR>
 <HR>
