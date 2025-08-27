@@ -8,6 +8,12 @@ It's okay if you dont understand WSL or Linux. I didn't either, and there's not 
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands.
 
 # --- CONFIGURATION ---
+You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
+Step 1: Type `sudo apt install dos2unix` (enter)
+Step 2: Naviagate to the file (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
+Step 3: Run it with `./btf.sh`
+
+
 ```
 APP_NAME="factorio.exe"      # Use the Windows process name of the app (default: factorio.exe)
 TIME_LIMIT_MINUTES=60        # Wait this long for the FIRST pop-up (default: 60 mins)
@@ -18,7 +24,6 @@ YAD_TIMEOUT=10               # How many seconds the pop-up stays on screen befor
 START_HOUR=17                # Start monitoring at 5 PM (default: 17 which is 5pm)
 STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11pm)
 ```
-# ------------------------------------
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Pr0s
 
