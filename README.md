@@ -8,6 +8,7 @@ It's okay if you dont understand WSL or Linux. I didn't either, and there's not 
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands.
 
 # --- CONFIGURATION ---
+```
 APP_NAME="factorio.exe"      # Use the Windows process name of the app (default: factorio.exe)
 TIME_LIMIT_MINUTES=60        # Wait this long for the FIRST pop-up (default: 60 mins)
 POPUP_INTERVAL_MINUTES=1     # Default interval for recurring pop-ups (default: 1 minute)
@@ -16,6 +17,7 @@ CHECK_INTERVAL_SECONDS=30    # How often the script checks if the app is running
 YAD_TIMEOUT=10               # How many seconds the pop-up stays on screen before timing out (default: 10 seconds)
 START_HOUR=17                # Start monitoring at 5 PM (default: 17 which is 5pm)
 STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11pm)
+```
 # ------------------------------------
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Pr0s
