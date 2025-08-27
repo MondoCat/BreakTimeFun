@@ -13,7 +13,17 @@ It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either, and there
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
 
-# --- CONFIGURATION ---
+
+# Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbies is below configuration)
+
+* Install WSL in powershell with `wsl --install`
+* Update APT with `sudo apt update && sudo apt upgrade -y`
+* Type `cd /mnt/c`
+* Set permissions with `chmod +x btf.sh`
+* Run it with `./btf.sh`
+
+  
+# Ye Olde Configuration File
 You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
 * Step 1: Type `sudo apt install dos2unix` (enter) in Ubuntu (Linux) to install the converter.
 * Step 2: Make changes to your config file in notepad. Save it in windows.
@@ -32,14 +42,6 @@ YAD_TIMEOUT=10               # How many seconds the pop-up stays on screen befor
 START_HOUR=17                # Start monitoring at 5 PM (default: 17 which is 5pm)
 STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11pm)
 ```
-
-# Installing WSL, Downloading YAD, and Running btf.sh for Pr0s
-
-* Install WSL in powershell with `wsl --install`
-* Update APT with `sudo apt update && sudo apt upgrade -y`
-* Type `cd /mnt/c`
-* Set permissions with `chmod +x btf.sh`
-* Run it with `./btf.sh`
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Newbies
 
