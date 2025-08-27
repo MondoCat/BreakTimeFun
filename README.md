@@ -2,7 +2,10 @@
 Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an app and forget to do chores, make supper, eat, water the cats, feed the plants, or even neglect to pee... and start saying "BTF! <3" 
 
 
-BTF is a WSL app for enforcing breaks for a particular app. (A forced break after 1 hour of Factorio is the default setting here. If you've played Factorio, you know why, heh.) 
+BTF is a completely customizable WSL app for enforcing breaks for a particular app. 
+
+
+By default, there is a forced break after each interval of 1 hour of Factorio. (If you've played Factorio, you know why, heh.) 
 
 
 This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
@@ -16,9 +19,11 @@ It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either, and there
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbie instructions are down below configuration)
 
-* Install WSL in powershell with `wsl --install`
+* Install WSL in powershell with `wsl --install` and follow the prompts
 * Update APT with `sudo apt update && sudo apt upgrade -y`
-* Type `cd /mnt/c`
+* Download and configure btf.sh to fit your needs (See below for configuration info)
+* Put btf.sh in "C:/Mondo" or wherever you like
+* Type `cd /mnt/c/mondo` (or wherever you saved it to)
 * Set permissions with `chmod +x btf.sh`
 * Run it with `./btf.sh`
 
