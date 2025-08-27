@@ -51,7 +51,9 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 # Installing WSL, Downloading YAD, and Running btf.sh for Newbies
 Let's assume you don't know what linux is. Never heard of WSL, and maybe you've seen the command prompt or PowerShell on Windows but haven't really touched it. Can you run this app? Yes! Let me hold your hand as we walk through the valley of death. You will fear no terminal, for you are with me! You'll be saying, "Mondo! Your keyboard and your mouse, they comfort me, and now, I vaguely understand how to use a command prompt in WSL/Linux! At least good enough to run btf.sh!"
 
-Just an FYI, using WSL/Linux/Ubunto pretty interchanably in this guide.
+Just an FYI, I am using the terms WSL/Linux/Ubunto pretty interchangably in this guide. I might fix this later, but right now i am eepi v_v.
+
+WSL = Windows Subsystem for Linux (Linux running in Windows!) Linux is the operation system (Similar to Windows/Mac), and Ubuntu is the "Flavor" of Linux. (Like Windows 10 vs Windows 11, but not directly upgrades like Windows does, but instead, running alongside eachother!)
 
 * Step 1: Open the Start Menu
 * Step 2: Type "PowerShell" but do NOT hit enter
