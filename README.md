@@ -5,13 +5,13 @@ BTF is a WSL app for enforcing breaks for a particular app. (Factorio is the def
 It's okay if you dont understand WSL or Linux. I didn't either, and there's not really any good guides on how to run it without being a Linux pr0, so I will include one here for you at the bottom section called "Installing WSL, Downloading YAD, and Running btf.sh for Newbies".
 
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
-* Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands.
+* Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
 
 # --- CONFIGURATION ---
 You can edit this configuration by opening the btf.sh in notepad on your windows computer! If you do though, you will have to install an extra program and run an extra command in Ubuntu after you save to "convert" the file to something Linux can read properly. (Blame Dos VS Linux end of line differences) 
-Step 1: Type `sudo apt install dos2unix` (enter)
-Step 2: Naviagate to the file (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
-Step 3: Run it with `./btf.sh`
+* Step 1: Type `sudo apt install dos2unix` (enter)
+* Step 2: Naviagate to the file (Instructions below how to naviate on Linux) and type `dos2unix btf.sh`
+* Step 3: Run it with `./btf.sh`
 
 
 ```
@@ -47,7 +47,7 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 * Step 10: Re-enter your password to confirm it
 * Step 11: You are now at Ubuntu command line!
 * Step 12: Update your "Linux App Store" by typing `sudo apt update && sudo apt upgrade -y` and hit enter (You can copy this with Ctrl+C in Github but NOT Ctrl+V in Ubuntu! You can paste it by making the Ubuntu window active and "right clicking the mouse" to paste.  Yes it's not convenient.)
--# Technically you can change from right click to paste to "Ctrl+Shift+V" to paste, but you need to right click the Ubuntu title bar, hit Properties, and checkmark "Use Ctrl+Shift+C/V as Copy/Paste")
+** <small>Technically you can change from right click to paste to "Ctrl+Shift+V" to paste, but you need to right click the Ubuntu title bar, hit Properties, and checkmark "Use Ctrl+Shift+C/V as Copy/Paste")</small>
 -# Learnin' Trivia: "Sudo" means "HEY! DO THIS OR ELSE!", "APT" means "Advanced Package Tool" (Kinda like Linux's app store!), and "-y" means "Yes"... So we're kind of saying "HEY! OPEN APT APP STORE, UPDATE IT & UPGRADE IT! Yes, do it!"
 * Step 13: Next, we're going to install a dependency called "YAD" (Yet Another Dialogue). A dependency is kind of like "An app that requires another app to run". It's dependent upon it! Type `sudo apt-get install yad`
 -# Learnin' Trivia: Some of these should sound familiar! "HEY! OPEN THE APP STORE, GET YAD, AND INSTALL IT!" (See you're becoming a Linux pro!)
