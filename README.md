@@ -7,11 +7,6 @@ It's okay if you dont understand WSL or Linux. I didn't either, and there's not 
 * WSL means Windows Subsystem for Linux. It basically means we're running "Command Line Linux" as a program on Windows! Pretty cool and no dual boot needed.
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands.
 
-
-# Dependencies
-`sudo apt-get update && sudo apt-get install yad`
-
-
 # --- CONFIGURATION ---
 APP_NAME="factorio.exe"      # Use the Windows process name of the app (default: factorio.exe)
 TIME_LIMIT_MINUTES=60        # Wait this long for the FIRST pop-up (default: 60 mins)
@@ -24,6 +19,7 @@ STOP_HOUR=23                 # Stop monitoring at 11 PM (default: 23 which is 11
 # ------------------------------------
 
 # Installing WSL, Downloading YAD, and Running btf.sh for Pr0s
+
 * Install WSL in powershell with `wsl --install`
 * Update APT with `sudo apt update && sudo apt upgrade -y`
 * Type `cd /mnt/c`
