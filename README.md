@@ -14,7 +14,7 @@ It's okay if you dont understand WSL or Ubuntu/Linux. I didn't either, and there
 * Command Line can look really scary if you've never used it, but not to worry! It's actually pretty easy if you know the commands. I'll teach you, don't worry!
 
 
-# Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbies is below configuration)
+# Installing WSL, Downloading YAD, and Running btf.sh for Pr0s (Newbie instructions are down below configuration)
 
 * Install WSL in powershell with `wsl --install`
 * Update APT with `sudo apt update && sudo apt upgrade -y`
