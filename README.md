@@ -5,7 +5,7 @@ Stop saying "WTF!?" when you and/or your partner hyperfocus for too long on an a
 BTF is a completely customizable WSL app for enforcing breaks for a particular app. 
 
 
-By default, there is a forced break after each interval of ***1 hour played of the Steam game, [Factorio](https://store.steampowered.com/app/427520/Factorio/) .*** (If you've played Factorio, you know why, heh.) 
+By default, there is a forced break after each interval of ***1 hour played of the critically acclaimed Steam game that has never gone on sale, so just buy it at full price, [Factorio](https://store.steampowered.com/app/427520/Factorio/) .*** (If you've played Factorio, you know why, heh.) 
 
 
 This app also features a "Snooze" button so you can finish up what you're working on before taking your break. There is also the "No, I'm not taking my break" option, but that only gets you so far...
